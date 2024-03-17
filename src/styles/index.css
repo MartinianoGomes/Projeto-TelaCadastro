@@ -7,10 +7,6 @@ body {
     background: #201b2c;
 }
 
-body * {
-    box-sizing: border-box;
-}
-
 .box {
     color: white;
     position: absolute;
@@ -20,12 +16,11 @@ body * {
     background-color: #33274e;
     padding: 15px;
     border-radius: 15px;
-    width: 20%;
 }
 
 fieldset {
     border: 3px solid dodgerblue;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
 }
 
@@ -39,6 +34,7 @@ legend {
 
 .inputBox {
     position: relative;
+    padding-bottom: 10%;
 }
 
 .inputUser {
@@ -58,6 +54,23 @@ legend {
     left: 0px;
     pointer-events: none;
     transition: .5s;
+}
+
+.btnSubmit {
+    font-family: 'Noto Sans', sans-serif;
+    background: dodgerblue;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+.btnSubmit:active {
+    background-color: rgb(22, 91, 160);
 }
 
 .inputUser:focus ~ .labelInput,
